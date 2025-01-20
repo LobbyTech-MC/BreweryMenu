@@ -222,7 +222,7 @@ public class BreweryMenu extends JavaPlugin implements SlimefunAddon {
     private ItemStack createBarrel(String s, int i) {
         List<String> lore = new ArrayList<>();
         lore.add("酿酒桶: " + s);
-        lore.add("时间: " + i + " 刻");
+        lore.add("时间: " + i + " 年");
         ItemStack barrel = new CustomItemStack(Material.BARREL, "&a桶类型");
         ItemMeta meta = barrel.getItemMeta();
         assert meta != null;
