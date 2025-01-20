@@ -1,1 +1,1 @@
-Slimefun addon adds a recipe window for Brewery plugin.
+将酿酒插件的物品添加1到粘液书里
