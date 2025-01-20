@@ -95,29 +95,29 @@ public class BreweryMenu extends JavaPlugin implements SlimefunAddon {
         ItemStack[] item = {null, null, null, null, null, null, null, null, null};
 
         ItemStack[] cauldron_recipe = {null, null, null, null, createMultiblockRecipe(Material.CAULDRON, "将水灌满"), null, createMultiblockRecipe(Material.COBBLESTONE_STAIRS, "火必须被楼梯包围"), createMultiblockRecipe(Material.FLINT_AND_STEEL, "需要火和其他热源"), createMultiblockRecipe(Material.COBBLESTONE_STAIRS, "火必须被楼梯包围")};
-        ItemStack[] skotska_whisky_recipe = {createRecipeItem("Wheat", 9, Material.WHEAT), createRecipeItem("YEAST", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&eYeast", 2), null, null, null, null, createBarrel("Oak", 10), createClock(4), createBrewingStand(2)};
-        ItemStack[] irska_whisky_recipe = {createRecipeItem("Wheat", 8, Material.WHEAT), createRecipeItem("YEAST", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&eYeast", 2), null, null, null, null, createBarrel("Oak", 3), createClock(4), createBrewingStand(3)};
-        ItemStack[] bourbon_recipe = {createRecipeItem("Wheat", 4, Material.WHEAT), createRecipeItem("CORN", "9bd3802e5fac03afab742b0f3cca41bcd4723bee911d23be29cffd5b965f1", "&eCorn", 5), createRecipeItem("YEAST", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&eYeast", 1), null, null, null, createBarrel("Oak", 3), createClock(4), createBrewingStand(2)};
-        ItemStack[] psenicne_pivo_recipe = {createRecipeItem("Wheat", 3, Material.WHEAT), createRecipeItem("YEAST", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&eYeast", 1), null, null, null, null, createBarrel("Birch", 2), createClock(8), null};
-        ItemStack[] pivo_recipe = {createRecipeItem("Wheat", 6, Material.WHEAT), createRecipeItem("YEAST", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&eYeast", 2), null, null, null, null, createBarrel("Jakýkoliv Sud", 3), createClock(8), null};
-        ItemStack[] tmavy_lezak_recipe = {createRecipeItem("Wheat", 12, Material.WHEAT), createRecipeItem("YEAST", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&eYeast", 1), null, null, null, null, createBarrel("Dark Oak", 8), createClock(8), null};
-        ItemStack[] cervene_vino_recipe = {createRecipeItem("Sweet Berries", 9, Material.SWEET_BERRIES), null, null, null, null, null, createBarrel("Jakýkoliv Sud", 20), createClock(5), null};
-        ItemStack[] bile_vino_recipe = {createRecipeItem("Glow Berries", 9, Material.GLOW_BERRIES), null, null, null, null, null, createBarrel("Jakýkoliv Sud", 20), createClock(5), null};
-        ItemStack[] medovina_recipe = {createRecipeItem("Honey Bottle", 4, Material.HONEY_BOTTLE), createRecipeItem("Sugar", 2, Material.SUGAR), createRecipeItem("YEAST", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&eYeast", 2), null, null, null, createBarrel("Oak", 4), createClock(3), null};
-        ItemStack[] jablecna_medovina_recipe = {createRecipeItem("Honey Bottle", 6, Material.HONEY_BOTTLE), createRecipeItem("Apple", 2, Material.APPLE), createRecipeItem("YEAST", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&eYeast", 1), null, null, null, createBarrel("Oak", 4), createClock(4), null};
-        ItemStack[] jablecny_most_recipe = {createRecipeItem("Apple", 14, Material.APPLE), null, null, null, null, null, createBarrel("Jakýkoliv Sud", 3), createClock(7), null};
-        ItemStack[] jablecny_liker_recipe = {createRecipeItem("Apple", 12, Material.APPLE), createRecipeItem("Sugar", 3, Material.SUGAR), null, null, null, null, createBarrel("Accacia", 6), createClock(16), createBrewingStand(3)};
-        ItemStack[] rum_recipe = {createRecipeItem("CORN", "9bd3802e5fac03afab742b0f3cca41bcd4723bee911d23be29cffd5b965f1", "&eCorn", 18), null, null, null, null, null, createBarrel("Oak", 14), createClock(6), createBrewingStand(2)};
-        ItemStack[] vodka_recipe = {createRecipeItem("Potato", 16, Material.POTATO), null, null, null, null, null, null, createClock(15), createBrewingStand(3)};
-        ItemStack[] houbova_vodka_recipe = {createRecipeItem("Potato", 14, Material.POTATO), createRecipeItem("Red Mushroom", 3, Material.RED_MUSHROOM), createRecipeItem("Brown Mushroom", 3, Material.BROWN_MUSHROOM), null, null, null, null, createClock(18), createBrewingStand(5)};
-        ItemStack[] gin_recipe = {createRecipeItem("Wheat", 9, Material.WHEAT), createRecipeItem("Blue Orchids", 6, Material.BLUE_ORCHID), createRecipeItem("Apple",1, Material.APPLE), null, null, null, null, createClock(6), createBrewingStand(2)};
-        ItemStack[] tequila_recipe = {createRecipeItem("Cactus", 8, Material.CACTUS), null, null, null, null, null, createBarrel("Birch", 12), createClock(15), createBrewingStand(2)};
-        ItemStack[] absinth_recipe = {createRecipeItem("Short Grass", 15, Material.GRASS), null, null, null, null, null, null, createClock(3), createBrewingStand(6)};
-        ItemStack[] zeleny_absinth_recipe = {createRecipeItem("Short Grass", 17, Material.GRASS), createRecipeItem("Poisonous Potato", 2, Material.POISONOUS_POTATO), null, null, null, null, null, createClock(5), createBrewingStand(6)};
-        ItemStack[] bramborova_polevka_recipe = {createRecipeItem("Potato", 5, Material.POTATO), createRecipeItem("Short Grass", 3, Material.GRASS), null, null, null, null, null, createClock(3), null};
-        ItemStack[] kava_recipe = {createRecipeItem("Cocoa Bean", 12, Material.COCOA_BEANS), createRecipeItem("Milk Bucket", 2, Material.MILK_BUCKET), null, null, null, null, null, createClock(2), null};
-        ItemStack[] vajecnak_recipe = {createRecipeItem("Egg", 5, Material.EGG), createRecipeItem("Sugar", 2, Material.SUGAR), createRecipeItem("Milk Bucket", 1, Material.MILK_BUCKET), null, null, null, createBarrel("Jakýkoliv Sud",3), createClock(2), null};
-
+        ItemStack[] skotska_whisky_recipe = {createRecipeItem("小麦", 9, Material.WHEAT), createRecipeItem("酵母", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&e酵母", 2), null, null, null, null, createBarrel("橡木桶", 10), createClock(4), createBrewingStand(2)};
+        ItemStack[] irska_whisky_recipe = {createRecipeItem("小麦", 8, Material.WHEAT), createRecipeItem("酵母", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&e酵母", 2), null, null, null, null, createBarrel("橡木桶", 3), createClock(4), createBrewingStand(3)};
+        ItemStack[] bourbon_recipe = {createRecipeItem("小麦", 4, Material.WHEAT), createRecipeItem("玉米", "9bd3802e5fac03afab742b0f3cca41bcd4723bee911d23be29cffd5b965f1", "&e玉米", 5), createRecipeItem("酵母", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&e酵母", 1), null, null, null, createBarrel("橡木桶", 3), createClock(4), createBrewingStand(2)};
+        ItemStack[] psenicne_pivo_recipe = {createRecipeItem("小麦", 3, Material.WHEAT), createRecipeItem("酵母", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&e酵母", 1), null, null, null, null, createBarrel("白桦木桶", 2), createClock(8), null};
+        ItemStack[] pivo_recipe = {createRecipeItem("小麦", 6, Material.WHEAT), createRecipeItem("酵母", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&e酵母", 2), null, null, null, null, createBarrel("任意桶", 3), createClock(8), null};
+        ItemStack[] tmavy_lezak_recipe = {createRecipeItem("小麦", 12, Material.WHEAT), createRecipeItem("酵母", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&e酵母", 1), null, null, null, null, createBarrel("深色橡木桶", 8), createClock(8), null};
+        ItemStack[] cervene_vino_recipe = {createRecipeItem("甜浆果", 9, Material.SWEET_BERRIES), null, null, null, null, null, createBarrel("任意桶", 20), createClock(5), null};
+        ItemStack[] bile_vino_recipe = {createRecipeItem("发光浆果", 9, Material.GLOW_BERRIES), null, null, null, null, null, createBarrel("任意桶", 20), createClock(5), null};
+        ItemStack[] medovina_recipe = {createRecipeItem("蜂蜜瓶", 4, Material.HONEY_BOTTLE), createRecipeItem("糖", 2, Material.SUGAR), createRecipeItem("酵母", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&e酵母", 2), null, null, null, createBarrel("橡木桶", 4), createClock(3), null};
+        ItemStack[] jablecna_medovina_recipe = {createRecipeItem("蜂蜜瓶", 6, Material.HONEY_BOTTLE), createRecipeItem("苹果", 2, Material.APPLE), createRecipeItem("酵母", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&e酵母", 1), null, null, null, createBarrel("橡木桶", 4), createClock(4), null};
+        ItemStack[] jablecny_most_recipe = {createRecipeItem("苹果", 14, Material.APPLE), null, null, null, null, null, createBarrel("任意桶", 3), createClock(7), null};
+        ItemStack[] jablecny_liker_recipe = {createRecipeItem("苹果", 12, Material.APPLE), createRecipeItem("糖", 3, Material.SUGAR), null, null, null, null, createBarrel("金合欢木桶", 6), createClock(16), createBrewingStand(3)};
+        ItemStack[] rum_recipe = {createRecipeItem("玉米", "9bd3802e5fac03afab742b0f3cca41bcd4723bee911d23be29cffd5b965f1", "&e玉米", 18), null, null, null, null, null, createBarrel("橡木桶", 14), createClock(6), createBrewingStand(2)};
+        ItemStack[] vodka_recipe = {createRecipeItem("马铃薯", 16, Material.POTATO), null, null, null, null, null, null, createClock(15), createBrewingStand(3)};
+        ItemStack[] houbova_vodka_recipe = {createRecipeItem("马铃薯", 14, Material.POTATO), createRecipeItem("红蘑菇", 3, Material.RED_MUSHROOM), createRecipeItem("棕色蘑菇", 3, Material.BROWN_MUSHROOM), null, null, null, null, createClock(18), createBrewingStand(5)};
+        ItemStack[] gin_recipe = {createRecipeItem("小麦", 9, Material.WHEAT), createRecipeItem("兰花", 6, Material.BLUE_ORCHID), createRecipeItem("苹果", 1, Material.APPLE), null, null, null, null, createClock(6), createBrewingStand(2)};
+        ItemStack[] tequila_recipe = {createRecipeItem("仙人掌", 8, Material.CACTUS), null, null, null, null, null, createBarrel("桦木桶", 12), createClock(15), createBrewingStand(2)};
+        ItemStack[] absinth_recipe = {createRecipeItem("草", 15, Material.GRASS), null, null, null, null, null, null, createClock(3), createBrewingStand(6)};
+        ItemStack[] zeleny_absinth_recipe = {createRecipeItem("草", 17, Material.GRASS), createRecipeItem("毒马铃薯", 2, Material.POISONOUS_POTATO), null, null, null, null, null, createClock(5), createBrewingStand(6)};
+        ItemStack[] bramborova_polevka_recipe = {createRecipeItem("土豆", 5, Material.POTATO), createRecipeItem("草", 3, Material.GRASS), null, null, null, null, null, createClock(3), null};
+        ItemStack[] kava_recipe = {createRecipeItem("可可豆", 12, Material.COCOA_BEANS), createRecipeItem("牛奶桶", 2, Material.MILK_BUCKET), null, null, null, null, null, createClock(2), null};
+        ItemStack[] vajecnak_recipe = {createRecipeItem("鸡蛋", 5, Material.EGG), createRecipeItem("糖", 2, Material.SUGAR), createRecipeItem("牛奶桶", 1, Material.MILK_BUCKET), null, null, null, createBarrel("任意桶", 3), createClock(2), null};
+    
         //recipe type - adds icon of cauldron
         RecipeType MENU_BOTTLE = new RecipeType(breweryGroupId, breweryGroupItem);
 
@@ -199,8 +199,8 @@ public class BreweryMenu extends JavaPlugin implements SlimefunAddon {
 
     private ItemStack createClock(int i) {
         List<String > lore = new ArrayList<>();
-        lore.add(i + " minut");
-        ItemStack clock = new CustomItemStack(Material.CLOCK, "&aDoba Vaření");
+        lore.add(i + " 分钟");
+        ItemStack clock = new CustomItemStack(Material.CLOCK, "&a烹饪时间");
         ItemMeta meta = clock.getItemMeta();
         assert meta != null;
         meta.setLore(lore);
@@ -210,8 +210,8 @@ public class BreweryMenu extends JavaPlugin implements SlimefunAddon {
 
     private ItemStack createBrewingStand(int i) {
         List<String> lore = new ArrayList<>();
-        lore.add(i + " Krát: ");
-        ItemStack brewingStand = new CustomItemStack(Material.BREWING_STAND, "&aPočet Destilace");
+        lore.add(i + " 次数: ");
+        ItemStack brewingStand = new CustomItemStack(Material.BREWING_STAND, "&a蒸馏次数");
         ItemMeta meta = brewingStand.getItemMeta();
         assert meta != null;
         meta.setLore(lore);
@@ -221,9 +221,9 @@ public class BreweryMenu extends JavaPlugin implements SlimefunAddon {
 
     private ItemStack createBarrel(String s, int i) {
         List<String> lore = new ArrayList<>();
-        lore.add("Sud: " + s);
-        lore.add("Čas: " + i + " let");
-        ItemStack barrel = new CustomItemStack(Material.BARREL, "&aTyp Sudu");
+        lore.add("酿酒桶: " + s);
+        lore.add("时间: " + i + " 刻");
+        ItemStack barrel = new CustomItemStack(Material.BARREL, "&a桶类型");
         ItemMeta meta = barrel.getItemMeta();
         assert meta != null;
         meta.setLore(lore);
