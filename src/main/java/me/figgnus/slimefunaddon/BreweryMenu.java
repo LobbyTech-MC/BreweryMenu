@@ -33,7 +33,7 @@ public class BreweryMenu extends JavaPlugin implements SlimefunAddon {
             // You could start an Auto-Updater for example
         }
         // item that represents group
-        ItemStack breweryGroupItem = new CustomItemStack(Material.POTION, "&eBrewery", "", "&aObjevte nádherný svět alkoholu...");
+        ItemStack breweryGroupItem = new CustomItemStack(Material.POTION, "&e酿酒", "", "&a探索酒精的美好世界...");
         ItemMeta meta = breweryGroupItem.getItemMeta();
         assert meta != null;
         meta.addItemFlags(ItemFlag.HIDE_POTION_EFFECTS);
@@ -45,56 +45,56 @@ public class BreweryMenu extends JavaPlugin implements SlimefunAddon {
         ItemGroup breweryGroup = new ItemGroup(breweryGroupId, breweryGroupItem);
 
         //item stacks (needed for creating item)
-        SlimefunItemStack cauldron_stack = new SlimefunItemStack("BREWERY", Material.CAULDRON, "&eBrewery");
-        SlimefunItemStack skotska_whisky_stack = new SlimefunItemStack("SKOTSKA_WHISKY", Material.POTION, "&eSkotská Whisky");
+        SlimefunItemStack cauldron_stack = new SlimefunItemStack("BREWERY", Material.CAULDRON, "&e酿酒");
+        SlimefunItemStack skotska_whisky_stack = new SlimefunItemStack("SKOTSKA_WHISKY", Material.POTION, "&e苏格兰威士忌");
         configureMeta(skotska_whisky_stack, createNewColor(186,125,84));
-        SlimefunItemStack irska_whisky_stack = new SlimefunItemStack("IRSKA_WHISKY", Material.POTION, "&eIrská Whisky");
+        SlimefunItemStack irska_whisky_stack = new SlimefunItemStack("IRSKA_WHISKY", Material.POTION, "&e爱尔兰威士忌");
         configureMeta(irska_whisky_stack, createNewColor(186,125,84));
-        SlimefunItemStack bourbon_stack = new SlimefunItemStack("BOURBON", Material.POTION, "&eBourbon");
+        SlimefunItemStack bourbon_stack = new SlimefunItemStack("BOURBON", Material.POTION, "&e波旁威士忌酒");
         configureMeta(bourbon_stack, createNewColor(186,125,84));
-        SlimefunItemStack psenicne_pivo_stack = new SlimefunItemStack("PSENICNE_PIVO", Material.POTION, "&ePšeničné Pivo");
+        SlimefunItemStack psenicne_pivo_stack = new SlimefunItemStack("PSENICNE_PIVO", Material.POTION, "&e麦酒");
         configureMeta(psenicne_pivo_stack, createNewColor(255,184,77));
-        SlimefunItemStack pivo_stack = new SlimefunItemStack("PIVO", Material.POTION, "&ePivo");
+        SlimefunItemStack pivo_stack = new SlimefunItemStack("PIVO", Material.POTION, "&e啤酒");
         configureMeta(pivo_stack, createNewColor(255,211,51));
-        SlimefunItemStack tmavy_lezak_stack = new SlimefunItemStack("TMAVY_LEZAK", Material.POTION, "&eTmavý Ležák");
+        SlimefunItemStack tmavy_lezak_stack = new SlimefunItemStack("TMAVY_LEZAK", Material.POTION, "&e黑啤酒");
         configureMeta(tmavy_lezak_stack, createNewColor(101,0,19));
-        SlimefunItemStack cervene_vino_stack = new SlimefunItemStack("CERVENE_VINO", Material.POTION, "&eČervené Víno");
+        SlimefunItemStack cervene_vino_stack = new SlimefunItemStack("CERVENE_VINO", Material.POTION, "&e红葡萄酒");
         configureMeta(cervene_vino_stack, Color.RED);
-        SlimefunItemStack bile_vino_stack = new SlimefunItemStack("BILE_VINO", Material.POTION, "&eBílé Víno");
+        SlimefunItemStack bile_vino_stack = new SlimefunItemStack("BILE_VINO", Material.POTION, "&e白葡萄酒");
         configureMeta(bile_vino_stack, Color.YELLOW);
-        SlimefunItemStack medovina_stack = new SlimefunItemStack("MEDOVINA", Material.POTION, "&eMedovina");
+        SlimefunItemStack medovina_stack = new SlimefunItemStack("MEDOVINA", Material.POTION, "&e蜂蜜酒");
         configureMeta(medovina_stack, Color.ORANGE);
-        SlimefunItemStack jablecna_medovina_stack = new SlimefunItemStack("JABLECNA_MEDOVINA", Material.POTION, "&eJablečná Medovina");
+        SlimefunItemStack jablecna_medovina_stack = new SlimefunItemStack("JABLECNA_MEDOVINA", Material.POTION, "&e苹果蜂蜜酒");
         configureMeta(jablecna_medovina_stack, Color.ORANGE);
-        SlimefunItemStack jablecny_most_stack = new SlimefunItemStack("JABLECNY_MOST", Material.POTION, "&eJablečný Mošt");
+        SlimefunItemStack jablecny_most_stack = new SlimefunItemStack("JABLECNY_MOST", Material.POTION, "&e苹果汁");
         configureMeta(jablecny_most_stack, createNewColor(248,104,32));
-        SlimefunItemStack jablecny_liker_stack = new SlimefunItemStack("JABLECNY_LIKER", Material.POTION, "&eJablečný Likér");
+        SlimefunItemStack jablecny_liker_stack = new SlimefunItemStack("JABLECNY_LIKER", Material.POTION, "&e苹果利口酒");
         configureMeta(jablecny_liker_stack, Color.RED);
-        SlimefunItemStack rum_stack = new SlimefunItemStack("RUM", Material.POTION, "&eRum");
+        SlimefunItemStack rum_stack = new SlimefunItemStack("RUM", Material.POTION, "&e朗姆酒");
         configureMeta(rum_stack, Color.MAROON);
-        SlimefunItemStack vodka_stack = new SlimefunItemStack("VODKA", Material.POTION, "&eVodka");
+        SlimefunItemStack vodka_stack = new SlimefunItemStack("VODKA", Material.POTION, "&e伏特加");
         configureMeta(vodka_stack, Color.WHITE);
-        SlimefunItemStack houbova_vodka_stack = new SlimefunItemStack("HOUBOVA_VODKA", Material.POTION, "&eHoubová Vodka");
+        SlimefunItemStack houbova_vodka_stack = new SlimefunItemStack("HOUBOVA_VODKA", Material.POTION, "&e蘑菇伏特加");
         configureMeta(houbova_vodka_stack, createNewColor(255,153,153));
-        SlimefunItemStack gin_stack = new SlimefunItemStack("GIN", Material.POTION, "&eGin");
+        SlimefunItemStack gin_stack = new SlimefunItemStack("GIN", Material.POTION, "&e杜松子酒");
         configureMeta(gin_stack, createNewColor(153,221,255));
-        SlimefunItemStack tequila_stack = new SlimefunItemStack("TEQUILA", Material.POTION, "&eTequila");
+        SlimefunItemStack tequila_stack = new SlimefunItemStack("TEQUILA", Material.POTION, "&e龙舌兰酒");
         configureMeta(tequila_stack, createNewColor(245,240,126));
-        SlimefunItemStack absinth_stack = new SlimefunItemStack("ABSINTH", Material.POTION, "&eAbsinth");
+        SlimefunItemStack absinth_stack = new SlimefunItemStack("ABSINTH", Material.POTION, "&e苦艾酒");
         configureMeta(absinth_stack, Color.GREEN);
-        SlimefunItemStack zeleny_absinth_stack = new SlimefunItemStack("ZELENY_ABSINTH", Material.POTION, "&eZelený Absinth");
+        SlimefunItemStack zeleny_absinth_stack = new SlimefunItemStack("ZELENY_ABSINTH", Material.POTION, "&e绿色苦艾酒");
         configureMeta(zeleny_absinth_stack, Color.LIME);
-        SlimefunItemStack bramborova_polevka_stack = new SlimefunItemStack("BRAMBOROVA_POLEVKA", Material.POTION, "&eBramborová Polévka");
+        SlimefunItemStack bramborova_polevka_stack = new SlimefunItemStack("BRAMBOROVA_POLEVKA", Material.POTION, "&e土豆汤");
         configureMeta(bramborova_polevka_stack, Color.ORANGE);
-        SlimefunItemStack kava_stack = new SlimefunItemStack("KAVA", Material.POTION, "&eKáva");
+        SlimefunItemStack kava_stack = new SlimefunItemStack("KAVA", Material.POTION, "&e咖啡");
         configureMeta(kava_stack, Color.BLACK);
-        SlimefunItemStack vajecnak_stack = new SlimefunItemStack("VAJECNAK", Material.POTION, "&eVaječňák");
+        SlimefunItemStack vajecnak_stack = new SlimefunItemStack("VAJECNAK", Material.POTION, "&e鸡蛋利口酒");
         configureMeta(vajecnak_stack, createNewColor(255,230,128));
 
         //recipe for items
         ItemStack[] item = {null, null, null, null, null, null, null, null, null};
 
-        ItemStack[] cauldron_recipe = {null, null, null, null, createMultiblockRecipe(Material.CAULDRON, "Naplnit vodou."), null, createMultiblockRecipe(Material.COBBLESTONE_STAIRS, "Oheň musí být obestavený schody."), createMultiblockRecipe(Material.FLINT_AND_STEEL, "Oheň nebo jiný zdroj tepla."), createMultiblockRecipe(Material.COBBLESTONE_STAIRS, "Oheň musí být obestavený schody.")};
+        ItemStack[] cauldron_recipe = {null, null, null, null, createMultiblockRecipe(Material.CAULDRON, "将水灌满"), null, createMultiblockRecipe(Material.COBBLESTONE_STAIRS, "火必须被楼梯包围"), createMultiblockRecipe(Material.FLINT_AND_STEEL, "需要火和其他热源"), createMultiblockRecipe(Material.COBBLESTONE_STAIRS, "火必须被楼梯包围")};
         ItemStack[] skotska_whisky_recipe = {createRecipeItem("Wheat", 9, Material.WHEAT), createRecipeItem("YEAST", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&eYeast", 2), null, null, null, null, createBarrel("Oak", 10), createClock(4), createBrewingStand(2)};
         ItemStack[] irska_whisky_recipe = {createRecipeItem("Wheat", 8, Material.WHEAT), createRecipeItem("YEAST", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&eYeast", 2), null, null, null, null, createBarrel("Oak", 3), createClock(4), createBrewingStand(3)};
         ItemStack[] bourbon_recipe = {createRecipeItem("Wheat", 4, Material.WHEAT), createRecipeItem("CORN", "9bd3802e5fac03afab742b0f3cca41bcd4723bee911d23be29cffd5b965f1", "&eCorn", 5), createRecipeItem("YEAST", "606be2df2122344bda479feece365ee0e9d5da276afa0e8ce8d848f373dd131", "&eYeast", 1), null, null, null, createBarrel("Oak", 3), createClock(4), createBrewingStand(2)};
