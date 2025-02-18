@@ -56,10 +56,10 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.Slimefun</groupId>
-            <artifactId>Slimefun4</artifactId>
-            <version>RC-28</version>
-            <scope>provided</scope>
+			<groupId>com.github.SlimefunGuguProject</groupId>
+			<artifactId>Slimefun4</artifactId>
+			<version>2024.3</version>
+			<scope>provided</scope>
             <exclusions>
                 <exclusion>
                     <groupId>io.github.baked-libs</groupId>
