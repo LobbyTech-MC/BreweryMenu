@@ -78,7 +78,7 @@ public class BreweryMenu extends JavaPlugin implements SlimefunAddon {
         configureMeta(houbova_vodka_stack, createNewColor(255,153,153));
         SlimefunItemStack gin_stack = new SlimefunItemStack("GIN", Material.POTION, "&e杜松子酒");
         configureMeta(gin_stack, createNewColor(153,221,255));
-        SlimefunItemStack tequila_stack = new SlimefunItemStack("TEQUILA", Material.POTION, "&e龙舌兰酒");
+        SlimefunItemStack tequila_stack = new SlimefunItemStack("TEQUILA2", Material.POTION, "&e龙舌兰酒");
         configureMeta(tequila_stack, createNewColor(245,240,126));
         SlimefunItemStack absinth_stack = new SlimefunItemStack("ABSINTH", Material.POTION, "&e苦艾酒");
         configureMeta(absinth_stack, Color.GREEN);
