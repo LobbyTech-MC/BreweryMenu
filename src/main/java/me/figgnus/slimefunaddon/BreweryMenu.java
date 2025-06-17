@@ -36,7 +36,7 @@ public class BreweryMenu extends JavaPlugin implements SlimefunAddon {
         ItemStack breweryGroupItem = new CustomItemStack(Material.POTION, "&e酿酒", "", "&a探索酒精的美好世界...");
         ItemMeta meta = breweryGroupItem.getItemMeta();
         assert meta != null;
-        meta.addItemFlags(ItemFlag.HIDE_POTION_EFFECTS);
+        meta.addItemFlags(ItemFlag.HIDE_ADDITIONAL_TOOLTIP);
         breweryGroupItem.setItemMeta(meta);
 
         // Give your Category a unique id.
@@ -112,9 +112,9 @@ public class BreweryMenu extends JavaPlugin implements SlimefunAddon {
         ItemStack[] houbova_vodka_recipe = {createRecipeItem("马铃薯", 14, Material.POTATO), createRecipeItem("红蘑菇", 3, Material.RED_MUSHROOM), createRecipeItem("棕色蘑菇", 3, Material.BROWN_MUSHROOM), null, null, null, null, createClock(18), createBrewingStand(5)};
         ItemStack[] gin_recipe = {createRecipeItem("小麦", 9, Material.WHEAT), createRecipeItem("兰花", 6, Material.BLUE_ORCHID), createRecipeItem("苹果", 1, Material.APPLE), null, null, null, null, createClock(6), createBrewingStand(2)};
         ItemStack[] tequila_recipe = {createRecipeItem("仙人掌", 8, Material.CACTUS), null, null, null, null, null, createBarrel("桦木桶", 12), createClock(15), createBrewingStand(2)};
-        ItemStack[] absinth_recipe = {createRecipeItem("草", 15, Material.GRASS), null, null, null, null, null, null, createClock(3), createBrewingStand(6)};
-        ItemStack[] zeleny_absinth_recipe = {createRecipeItem("草", 17, Material.GRASS), createRecipeItem("毒马铃薯", 2, Material.POISONOUS_POTATO), null, null, null, null, null, createClock(5), createBrewingStand(6)};
-        ItemStack[] bramborova_polevka_recipe = {createRecipeItem("土豆", 5, Material.POTATO), createRecipeItem("草", 3, Material.GRASS), null, null, null, null, null, createClock(3), null};
+        ItemStack[] absinth_recipe = {createRecipeItem("草", 15, Material.SHORT_GRASS), null, null, null, null, null, null, createClock(3), createBrewingStand(6)};
+        ItemStack[] zeleny_absinth_recipe = {createRecipeItem("草", 17, Material.SHORT_GRASS), createRecipeItem("毒马铃薯", 2, Material.POISONOUS_POTATO), null, null, null, null, null, createClock(5), createBrewingStand(6)};
+        ItemStack[] bramborova_polevka_recipe = {createRecipeItem("土豆", 5, Material.POTATO), createRecipeItem("草", 3, Material.SHORT_GRASS), null, null, null, null, null, createClock(3), null};
         ItemStack[] kava_recipe = {createRecipeItem("可可豆", 12, Material.COCOA_BEANS), createRecipeItem("牛奶桶", 2, Material.MILK_BUCKET), null, null, null, null, null, createClock(2), null};
         ItemStack[] vajecnak_recipe = {createRecipeItem("鸡蛋", 5, Material.EGG), createRecipeItem("糖", 2, Material.SUGAR), createRecipeItem("牛奶桶", 1, Material.MILK_BUCKET), null, null, null, createBarrel("任意桶", 3), createClock(2), null};
     
@@ -181,7 +181,7 @@ public class BreweryMenu extends JavaPlugin implements SlimefunAddon {
         PotionMeta meta = (PotionMeta) item.getItemMeta();
         assert meta != null;
         meta.setColor(color);
-        meta.addItemFlags(ItemFlag.HIDE_POTION_EFFECTS);
+        meta.addItemFlags(ItemFlag.HIDE_ADDITIONAL_TOOLTIP);
         item.setItemMeta(meta);
     }
 
